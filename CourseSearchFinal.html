@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+	<!-- Set Web Page Title -->
+    <head>
+        <title>Course Search</title>
+    </head>
+	
+	<!-- Insert UNG Logo -->
+    <div class="logoUNG">
+        <br>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/University_of_North_Georgia_logo.png?20151206142651" width="300" height="150" class="center">
+    </div>
+	
+	<!-- Heading above the filters -->
+    <div class="pageTitleDiv">
+        <table class="plaintable" width="100%" summary="Displays the title." <tbody>
+            <tr>
+                <td class="courseSearchHeading">
+                    <h2>Course Search</h2>
+                </td>
+
+            </tr>
+            </tbody>
+        </table>
+		
+		<!-- Create Upper divider -->
+        <hr align="center," noshade="false," size="4," width="100%" color="#003366">
+        <a name="main_content"></a>
+    </div>
+	
+	<!-- Global class for filters -->
+    <div class="searchOptionsDiv">
+        
+		<!-- Enclose all filters into a POST form -->
+		<form action="Placeholder" method="post">
+            
+			<!-- Title of this filter section -->
+			<b class="optionHeaders"><h2>Options</h2></b>
+            <table>
+                <tbody>
+                    <tr>
+                        <td> <!-- Filter name -->
+                            <b>Course Term:</b>
+                        </td>
+						
+						<!-- Checkbox and labels for each option with horizontal alignment -->
+                        <td class="horizontalCheckBox">
+        					<input type="checkbox" id="SelectAll2" onClick="toggle2(this)"> 
+                            <label for="SelectAll2">All</label>
+                            
+                            <input id="Summer2022" name="term" type="checkbox">
+        					<label for="Summer2022">Summer2022</label>
+        					
+                            <input id="Fall2022" name="term" type="checkbox">
+        					<label for="Fall2022">Fall2022</label>
+                            
+                            <input id="Spring2022" name="term" type="checkbox">
+        					<label for="Spring2022">Spring2022</label>
+                            
+                            <input id="Fall2021" name="term" type="checkbox">
+        					<label for="Fall2021">Fall2021</label>
+                            
+                            <input id="Summer2021" name="term" type="checkbox">
+        					<label for="Summer2021">Summer2021</label>
+                            
+                            <input id="Spring2021" name="term" type="checkbox">
+        					<label for="Spring2021">Spring2021</label>
+                            
+                            <input id="Fall2020" name="term" type="checkbox">
+        					<label for="Fall2020">Fall2020</label>
+                            
+                            <input id="Summer2020" name="term" type="checkbox">
+        					<label for="Summer2020">Summer2020</label>
+                            
+                            <input id="Spring2020" name="term" type="checkbox">
+        					<label for="Spring2020">Spring2020</label>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table>
+                <tbody>
+
+                    <tr>
+                        <td> <!-- Filter name -->
+                            <b>Part of Term:</b>
+                        </td>
+						
+						<!-- Checkbox and labels for each option with horizontal alignment -->
+                        <td class="horizontalCheckBox">
+        					<input type="checkbox" id="SelectAll3" onClick="toggle3(this)"> 
+                            <label for="SelectAll3">All</label>
+                            
+                            <input id="FullSession" name="termPart" type="checkbox">
+        					<label for="FullSession">Full Session</label>
+        					
+                            <input id="FirstHalfSession" name="termPart" type="checkbox">
+        					<label for="FirstHalfSession">First Half Session</label>
+                            
+                            <input id="SecondHalfSession" name="termPart" type="checkbox">
+        					<label for="SecondHalfSession">Second Half Session</label>
+                            
+                            <input id="eMajor" name="termPart" type="checkbox">
+        					<label for="eMajor">eMajor</label>
+                            
+                            <input id="eCore(Full)" name="termPart" type="checkbox">
+        					<label for="eCore(Full)">eCore(Full)</label>
+                            
+                            <input id="eCore(First)" name="termPart" type="checkbox">
+        					<label for="eCore(First)">eCore(First)</label>
+                            
+                            <input id="eCore(Second" name="termPart" type="checkbox">
+        					<label for="eCore(Second)">eCore(Second)</label>
+                            
+                            <input id="GOML(Full)" name="termPart" type="checkbox">
+        					<label for="GOML(Full)">GOML(Full)</label>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table>
+                <tbody>
+
+                    <tr>
+                        <td> <!-- Filter name -->
+                            <b>Campus:</b>
+                        </td>
+
+						<!-- Checkbox and labels for each option with horizontal alignment -->
+                        <td class="horizontalCheckBox">
+        					<input type="checkbox" id="SelectAll4" onClick="toggle4(this)"> 
+                            <label for="SelectAll4">All</label>
+                            
+                            <input id="Cumming" name="campus" type="checkbox">
+        					<label for="Cumming">Cumming</label>
+        					
+                            <input id="Dahlonega" name="campus" type="checkbox">
+        					<label for="Dahlonega">Dahlonega</label>
+                            
+                            <input id="Gainesville" name="campus" type="checkbox">
+        					<label for="Gainesville">Gainesville</label>
+                            
+                            <input id="Brenau" name="campus" type="checkbox">
+        					<label for="Brenau">Brenau</label>
+                            
+                            <input id="Blue Ridge" name="campus" type="checkbox">
+        					<label for="Blue Ridge">Blue Ridge</label>
+                            
+                            <input id="Oconee" name="campus" type="checkbox">
+        					<label for="Oconee">Oconee</label>
+                            
+                            <input id="UNG Online" name="campus" type="checkbox">
+        					<label for="UNG Online">UNG Online</label>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table>
+                <tbody>
+
+                    <tr>
+                        <td> <!-- Filter name -->
+                            <b>Course Level:</b>
+                        </td>
+						
+						<!-- Checkbox and labels for each option with horizontal alignment -->
+                        <td class="horizontalCheckBox">
+        					<input type="checkbox" id="SelectAll5" onClick="toggle5(this)"> 
+                            <label for="SelectAll5">All</label>
+                            
+                            <input id="1000Level" name="level" type="checkbox">
+        					<label for="1000Level">1000 Level</label>
+        					
+                            <input id="2000Level" name="level" type="checkbox">
+        					<label for="2000Level">2000 Level</label>
+                            
+                            <input id="3000Level" name="level" type="checkbox">
+        					<label for="3000Level">3000 Level</label>
+                            
+                            <input id="4000Level" name="level" type="checkbox">
+        					<label for="4000Level">4000 Level</label>
+                            
+                            <input id="Graduate" name="level" type="checkbox">
+        					<label for="Graduate">Graduate</label>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table>
+                <tbody>
+
+                    <tr>
+                        <td> <!-- Filter name -->	
+                            <b>Instruction Method:</b>
+                        </td>
+
+                        <td> <!-- Dropdown box for the instructions methods -->
+                            <select name="Instruction Method">
+                        		<option selected="selected" value="All">(All instruction methods)</option>
+								<option value="InPerson">Face-to-Face Instruction</option>
+								<option value="Hybrid">Hybrid Instruction</option>
+								<option value="FullyDistance">Fully-at-a-Distance Instruction</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table>
+                <tbody>
+
+                    <tr>
+                        <td> <!-- Filter name -->
+                            <b>Schedule Type:</b>
+                        </td>
+
+                        <td> <!-- Dropdown box for the schedule types -->
+                            <select name="scheduleType">
+                        		<option selected="selected" value="All">(All schedule types)</option>
+								<option value="MWF">MWF Class</option>
+								<option value="MW">MW Class</option>
+								<option value="TTH">TTH Class</option>
+								<option value="OnlineMeet">Online-only</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table>
+                <tbody>
+
+                    <tr>
+                        <td> <!-- Filter name -->
+                            <b>Instructor:</b>
+                        </td>
+
+                        <td> <!-- Dropdown box for the instructors -->
+                            <select name="instructorName">
+                        		<option selected="selected" value="All">(All instructors)</option>
+								<option value="Payne">Dr. Bryson Payne</option>
+								<option value="Abegaz">Dr. Tamirat Abegaz</option>
+								<option value="Kongmunvattana">Dr. Angkul Kongmunvattana</option>
+								<option value="Rusk">Dr. David Rusk</option>
+
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table>
+                <tbody>
+                    <tr> <!-- Filter name -->
+                        <td align="RIGHT">
+                            <b>Attribute Type: </b>
+                            <br> "(Ctrl+Mouse Click to select "
+                            <br> " more than one option)"
+                        </td>
+
+                        <td> <!-- Box with option to choose 1 or multiple options -->
+                            <select name="multi_dropDown" size="5" multiple>
+                            	<option selected="selected" value="All">(All Courses)</option>
+                                <option value="ZNCM">$0 textbook costs</option>
+                                <option value="AENG">Area A - English</option>
+                                <option value="AMAT">Area A - Math</option>
+                                <option value="BGEN">Area B - Global Courses</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+			
+			<!-- Title of the time related options -->
+            <b class="optionHeaders"><h2>Time Options</h2></b>
+
+            <table>
+                <tbody>
+
+                    <tr>
+
+                        <td> <!-- Label for the start time option -->
+                            <label for="startTime"><b>Choose start time:</b></label>
+							 <!-- Start time option with a full 24 hour range -->
+                            <input type="time" id="startTime" name="startTime" min="00:00" max="24:00">
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table>
+                <tbody>
+
+                    <tr>
+
+                        <td> <!-- Label for the end time option -->
+                            <label for="endTime"><b>Choose end time:</b></label>
+							 <!-- End time option with a full 24 hour range -->
+                            <input type="time" id="endTime" name="endTime" min="00:00" max="24:00">
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+			<!-- Days of the week check boxes -->
+            <table class="weekDaysSelect">
+                <tbody>
+                    <tr>
+                        <td rowspan="7">
+							<!-- Monday Option -->
+                            <input type="checkBox" name="monDay" value="M">
+                            <b>Monday</b>
+                            <br>
+							<!-- Tuesday Option -->
+                            <input type="checkBox" name="monDay" value="M">
+                            <b>Tuesday</b>
+                            <br>
+							<!-- Wednesday Option -->
+                            <input type="checkBox" name="monDay" value="M">
+                            <b>Wednesday</b>
+                            <br>
+							<!-- Thursday Option -->
+                            <input type="checkBox" name="monDay" value="M">
+                            <b>Thursday</b>
+                            <br>
+							<!-- Friday Option -->
+                            <input type="checkBox" name="monDay" value="M">
+                            <b>Friday</b>
+                            <br>
+							<!-- Saturday Option -->
+                            <input type="checkBox" name="monDay" value="M">
+                            <b>Saturday</b>
+                            <br>
+							<!-- Sunday Option -->
+                            <input type="checkBox" name="monDay" value="M">
+                            <b>Sunday</b>
+                            <br>
+							<!-- Select all Option -->
+                            <input type="checkBox" name="SelectAll" value="M" onClick="toggle(SelectAll);">
+                            <b>Select All</b>
+                       <td>
+                    <tr>
+                <tbody>
+            </table>
+
+            <script language="JavaScript">
+				//Function allowing the select all option to select all Days
+                function toggle(source) {
+                    var checkboxes = document.querySelectorAll('input[name="monDay"]');
+                    for (var i = 0; i < checkboxes.length; i++) {
+                        if (checkboxes[i] != source)
+                            checkboxes[i].checked = source.checked;
+                    }
+                }
+                
+				//Function allowing the select all option to select all terms
+                function toggle2(source) {
+                    var checkboxes = document.querySelectorAll('input[name="term"]');
+                    for (var i = 0; i < checkboxes.length; i++) {
+                        if (checkboxes[i] != source)
+                            checkboxes[i].checked = source.checked;
+                    }
+                }
+                
+				//Function allowing the select all option to select all parts of term
+                function toggle3(source) {
+                    var checkboxes = document.querySelectorAll('input[name="termPart"]');
+                    for (var i = 0; i < checkboxes.length; i++) {
+                        if (checkboxes[i] != source)
+                            checkboxes[i].checked = source.checked;
+                    }
+                }
+                
+				//Function allowing the select all option to select all campuses
+                function toggle4(source) {
+                    var checkboxes = document.querySelectorAll('input[name="campus"]');
+                    for (var i = 0; i < checkboxes.length; i++) {
+                        if (checkboxes[i] != source)
+                            checkboxes[i].checked = source.checked;
+                    }
+                }
+                
+				//Function allowing the select all option to select all course levels
+                function toggle5(source) {
+                    var checkboxes = document.querySelectorAll('input[name="level"]');
+                    for (var i = 0; i < checkboxes.length; i++) {
+                        if (checkboxes[i] != source)
+                            checkboxes[i].checked = source.checked;
+                    }
+                }
+                
+                
+            </script>
+
+
+			<!-- Align reset and submit button -->
+            <hr align="right," noshade="false," size="4 " width="100%" color="#003366">
+            <input type="submit" name="searchButton" value="Search" style="height:30px; width:80px">
+            <input type="reset" name="resetButton" value="Reset" style="height:30px; width:80px">
+
+        </form>
+
+
+
+    </div>
+	
+	<!-- Create div for a vertical divider -->
+    <div class="verticalSeparator"></div>
+
+</body>
+
+<style>
+	/* Class to center objects */
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right:auto;
+    }
+    
+	/* Color the options header red */
+    .optionHeaders {
+        color: red;
+    }
+    
+	/* Indent all the filters */
+    .searchOptionsDiv td b {
+        margin-left: 1em;
+    }
+    
+	/* Indent the week day filters */
+    .weekDaysSelect {
+        margin-left: 1em;
+    }
+    
+	/* Create the vertical seprator */
+    .verticalSeparator {
+        border-left: 5px solid #003366;
+        height: 822px;
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        margin-left: -85px;
+        top: 294px;
+        margin-left: auto;
+        margin-right:auto;
+    }
+    
+	/* Set text size of the filters */
+    div {
+        font-size: 22px;
+    }
+    
+	/* Horizontally align checkboxes */
+    .horizontalCheckBox {
+    	display: inline-block;
+        font-size: 16px;
+    }
+</style>
+
+</html>
